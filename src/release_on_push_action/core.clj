@@ -112,7 +112,6 @@
                                         (map github/commit-summary))
 
         body (with-out-str
-               (printf "Version %s\n\n" next-version)
                (when-let [body (not-empty (:input/release-body context))]
                  (println body)
                  (println))
