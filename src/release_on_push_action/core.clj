@@ -118,7 +118,7 @@
                  (println))
 
                ;; Do not include our custom commit summary if using Github Release Notes
-               ))]
+               )]
     {:tag_name               tag-name
      :target_commitish       (:sha context)
      :name                   (-> (:input/release-name context)
